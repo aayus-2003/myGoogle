@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dummy_google.com</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a
+              class="dark"
+              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+              >Gmail</a
+            >
+          </li>
+          <li>
+            <a
+              class="dark"
+              href="https://www.google.com/imghp?hl=en&tab=ri&ogbl"
+              class="set"
+              >Images</a
+            >
+          </li>
+          <div class="circle" id="circle"></div>
+        </ul>
+      </nav>
+      <div class="right">
+        <div class="side-bar toggle" id="bar">
+          <div class="first">
+            <div class="evenly">
+              <div class="img-circle"></div>
+              <div class="mini-text">
+                <h4>Ayush Goregaonkar</h4>
+                <p class="p">ayushgoregaonkar28@gmail.com</p>
+              </div>
+            </div>
+            <div class="btn-center">
+              <button class="btn-first" id="btnFirst">
+                Manage Your Google Account
+              </button>
+            </div>
+          </div>
+          <div class="second">
+            <i class="cursor_pointer fa-solid fa-shield-halved edit"></i>
+            <h4 class="cursor_pointer">Recommeded action</h4>
+          </div>
+          <div class="third">
+            <i class="cursor_pointer fa-solid fa-address-book edit1"></i>
+            <h5 class="cursor_pointer">Add anthore account</h5>
+          </div>
+          <div class="four">
+            <i class="cursor_pointer fa-solid fa-rotate-left edit2"></i>
+            <h4 class="cursor_pointer">Sign out</h4>
+          </div>
+          <div class="five">
+            <span class="sp1 cursor_pointer" id="sp1">Privacy Policy</span>
+            <span class="sp2 cursor_pointer" id="sp2">Term Of Service</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" id="container">
+      <div class="box-1"><img class="size" src="img/google img.png" /></div>
+      <div class="box-2">
+        <div class="div-icon">
+          <i class="fa-solid fa-magnifying-glass side" id="logo"></i>
+        </div>
+        <input
+          type="text"
+          placeholder="Search Google or type a URL"
+          class="text"
+          id="input"
+          list="input"
+        />
+      </div>
+      <datalist id="input">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="javascript">javascript</option>
+        <option value="ajax">ajax</option>
+        <option value="bablu">bablu</option>
+        <option value="chintu">chintu</option>
+      </datalist>
+
+      <div class="box-3">
+        <div class="box3-child" id="addElem">
+          <div id="youtube" class="a">
+            <i class="fa-brands fa-youtube" style="color: #f32020"></i>
+          </div>
+          <div id="github" class="b"><i class="fa-brands fa-github"></i></div>
+          <div id="facebook" class="c">
+            <i class="fa-brands fa-facebook" style="color: #366ece"></i>
+          </div>
+          <div id="whatsapp" class="d">
+            <i class="fa-brands fa-whatsapp" style="color: #1ea446"></i>
+          </div>
+          <div id="plus" class="e">
+            <i class="fa-solid fa-plus" style="color: #000000"></i>
+          </div>
+        </div>
+        <!-- new one -->
+        <div class="box3-child_new" id="newAddElem"></div>
+        <!-- new one end -->
+      </div>
+    </div>
+
+    <div class="newContainer none" id="newContainer">
+      <div class="addLinks">
+        <div class="linksContainerFirst">Add Shortcut</div>
+        <div class="linksContainer">
+        <label for="name">Name</label>  <br>
+        <input class="input" type="text" id="name">
+        </div>
+        <div class="linksContainer">
+          <label for="url">URL</label>  <br>
+        <input class="input" type="text" id="url">
+        </div>
+        <div class="linksContainerLast">
+          <button onclick="cancel()" style="color: blue;" class="btn">Cancel</button>
+          <button onclick="add()" class="btn">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/16efe3c440.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
